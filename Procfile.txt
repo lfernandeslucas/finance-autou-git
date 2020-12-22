@@ -1,0 +1,1 @@
+worker: python scrapper_nubank_v1_heroku.py
