@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.options import Options
 import time
-import pickle
+#import pickle
 from datetime import date, timedelta###### Essencial
 import datetime
 ####
@@ -11,13 +11,13 @@ import datetime
 from shareplum import Site ###### Essencial
 from shareplum import Office365 ###### Essencial
 
-import sys
+#import sys
 ### Ignorar.
 # f = open('parrot4.pkl','rb')
 # myrowsbackup = pickle.load(f)
 # z = open('parrot5.pkl','rb')
 # mycells_backup = pickle.load(z)
-print(sys.version)
+#print(sys.version)
 
 ####Alterar:
 ################################### PARAMETRIZAÇÃO de data (DEFINIR O ANO DOS REGISTROS) e dicionário de meses!!!!!!!!!!!!!!!!!!!!!!!! <<<<<<<<<<<<<<<<<------ CONFERIR \/\/\/!!
@@ -32,7 +32,6 @@ senha = 'Gmjc873umac1$'
 
 
 print("TESTANDO git")
-print("testando HEROKUasdasdsa'")
 
 
 
@@ -74,10 +73,10 @@ for row in mytable.find_elements_by_css_selector('tr'):
         print("----")
 
 ####### Salvando os resultados em Pickle temporário
-with open('parrot4.pkl','wb') as z:
-        pickle.dump(list_rows,z)
-with open('parrot5.pkl','wb') as x:
-        pickle.dump(list_cells,x)
+# with open('parrot4.pkl','wb') as z:
+#         pickle.dump(list_rows,z)
+# with open('parrot5.pkl','wb') as x:
+#         pickle.dump(list_cells,x)
 
 ###################################################################### Fim do Crawler ao site do Nubank.
 
